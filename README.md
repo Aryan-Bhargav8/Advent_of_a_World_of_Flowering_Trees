@@ -13,3 +13,27 @@ short_description: This space is for Huggingface build small hackathon
 ---
 
 Check out the configuration reference at https://huggingface.co/docs/hub/spaces-config-reference
+
+
+
+## For development:
+
+first download uv and hf cli tool
+
+
+```bash
+uv venv --python 3.13 --seed
+```
+
+then activate the virtual env .venv
+
+```bash
+source .venv/Scripts/activate
+```
+
+then download dependencies
+```python
+python -m pip install -r requirements.txt
+```
+
+then play around and change code..
