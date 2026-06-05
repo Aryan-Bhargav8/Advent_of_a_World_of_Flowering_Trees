@@ -1,6 +1,8 @@
 import gradio as gr
 import spaces
 from huggingface_hub import hf_hub_download
+from llama_cpp import Llama
+
 
 MODEL_REPO_ID = "CohereLabs/tiny-aya-global-GGUF"
 MODEL_FILENAME = "tiny-aya-global-q4_k_m.gguf"
@@ -14,7 +16,6 @@ _llm = None
 
 
 def get_llm():
-    from llama_cpp import Llama
     global _llm
     if _llm is None:
         _llm = Llama(
