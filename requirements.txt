@@ -2,8 +2,7 @@
 # Do not pin gradio or its internal dependencies in a Gradio Space.
 modal==1.4.3
 hf_transfer
---extra-index-url https://abetlen.github.io/llama-cpp-python/whl/cu124
-llama-cpp-python
+llama-cpp-python==0.3.19
 spaces
 torch
 diffusers

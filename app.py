@@ -19,9 +19,8 @@ def get_llm() -> Llama:
     if _llm is None:
         _llm = Llama(
             model_path=model_path,
-            n_gpu_layers=-1,
+            n_gpu_layers=0,
             n_ctx=1024,
-            flash_attn=True,
             verbose=False,
         )
     return _llm
