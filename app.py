@@ -34,6 +34,7 @@ def get_llm():
             model_path=model_path,
             n_gpu_layers=-1,
             n_ctx=1024,
+            flash_attn=True,
             verbose=False,
         )
     return _llm
