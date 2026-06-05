@@ -10,6 +10,10 @@ app_file: app.py
 pinned: true
 license: mit
 short_description: This space is for Huggingface build small hackathon
+preload_from_hub:
+    - CohereLabs/tiny-aya-global-GGUF tiny-aya-global-q4_k_m.gguf
+    - black-forest-labs/FLUX.2-klein-4b-nvfp4
+    - openbmb/MiniCPM-V-4.6-Thinking-gguf
 ---
 
 Check out the configuration reference at https://huggingface.co/docs/hub/spaces-config-reference

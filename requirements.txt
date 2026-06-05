@@ -1,3 +1,13 @@
 # Add only extra runtime dependencies here.
 # Do not pin gradio or its internal dependencies in a Gradio Space.
 modal==1.4.3
+hf_transfer
+--extra-index-url https://abetlen.github.io/llama-cpp-python/whl/cu124
+llama-cpp-python
+spaces
+torch
+diffusers
+transformers
+huggingface_hub
+accelerate
+safetensors
